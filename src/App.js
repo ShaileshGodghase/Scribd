@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import AudioBooks from './Components/AudioBooks';
+import Footer from './Components/Footer';
+import MainContent from './Components/MainContent';
+import Navbar from './Components/Navbar';
+import PressSection from './Components/PressSection';
+import Quotes from './Components/Quotes';
+import Subscription from './Components/Subscription';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar />
+    <MainContent />
+    <Subscription />
+    <Quotes />
+    <AudioBooks />
+    <PressSection />
+    <Footer />
+    </>
   );
 }
 
